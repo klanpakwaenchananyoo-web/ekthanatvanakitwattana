@@ -77,7 +77,6 @@ bool operator==(double s, const ComplexNumber &c){
     return (s == c.real && c.imag == 0);
 }
 
-
 ostream& operator<<(ostream &os, const ComplexNumber &c){
     if(c.real == 0 && c.imag == 0) return os << "0";
     if(c.real == 0) return os << c.imag << "i";
